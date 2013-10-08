@@ -1,5 +1,6 @@
 told-nodejs-client
 ==========
+[![Build Status](https://travis-ci.org/petershaw/told-nodejs-client.png?branch=master)](https://travis-ci.org/petershaw/told-nodejs-client)
 ---
 
  A client to log messates into a told log recorder.
