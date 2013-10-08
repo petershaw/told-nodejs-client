@@ -1,22 +1,29 @@
 {
-  "name": "told-nodejs.client",
-  "description": "A client to log messages to the told server.",
-  "version": "0.0.1",
-  "private": false,
-  "homepage": "https://github.com/petershaw/told-nodejs-client",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/petershaw/told-nodejs-client.git"
-  },
-  "author": "Peter Shaw <unthoughted@gmail.com> (https://github.com/petershaw/)",
-  "main": "index.js",
-  "keywords": [
-    "log"
-    ,"distributed logs"
-    ,"told LogRecorder"
-  ],
-  "dependencies": {
+	"name": "told-nodejs.client"
+	, "description": "A client to log messages to the told server."
+	, "version": "0.0.1"
+	, "private": false
+	, "homepage": "https://github.com/petershaw/told-nodejs-client"
+	, "repository": {
+		"type": "git"
+		, "url": "https://github.com/petershaw/told-nodejs-client.git"
+	}
+	, "author": "Peter Shaw <unthoughted@gmail.com> (https://github.com/petershaw/)"
+	, "main": "index.js"
+	, "scripts": {
+		"test": "node_modules/mocha/bin/mocha --recursive tests/*Test.js"
+	}
+	, "keywords": [
+		"log"
+		, "distributed logs"
+		, "told LogRecorder"
+	]
+	, "dependencies": {
 		"request":	"~2.27.0"
 		, "underscore": "~1.5.2"
-  }
+	}	
+	, "devDependencies": {
+		"mocha": "~1.9.0"
+		, "chai": "~1.6.0"
+	}
 }
