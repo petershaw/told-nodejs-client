@@ -1,5 +1,5 @@
 {
-	"name": "told-nodejs.client"
+	"name": "told-nodejs-client"
 	, "description": "A client to log messages to the told server."
 	, "version": "0.0.1"
 	, "private": false
