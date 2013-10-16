@@ -1,6 +1,7 @@
 told-nodejs-client
 ==========
 [![Build Status](https://travis-ci.org/petershaw/told-nodejs-client.png?branch=master)](https://travis-ci.org/petershaw/told-nodejs-client)
+[![NPM version](https://badge.fury.io/js/told-nodejs-client.png)](http://badge.fury.io/js/told-nodejs-client)
 ---
 
  A client to log messates into a told log recorder.

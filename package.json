@@ -1,7 +1,7 @@
 {
 	"name": "told-nodejs-client"
 	, "description": "A client to log messages to the told server."
-	, "version": "0.0.1"
+	, "version": "0.0.2"
 	, "private": false
 	, "homepage": "https://github.com/petershaw/told-nodejs-client"
 	, "repository": {
