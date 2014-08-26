@@ -81,7 +81,6 @@ describe('Tell with minimal requirements and a', function(){
     	chai.expect(result).to.have.property('tags');
     	chai.expect(result.tags).to.be.an.instanceof(Array);
     	chai.expect(result.message.said).to.be.equals("This is a test message");
-    	
     	chai.expect(_.isEqual(result, expected_A)).to.be.true;
  	});
 
@@ -124,7 +123,8 @@ describe('Tell with user defined message and minimal requirements', function(){
 	});
 
  	it('should return expected result E .', function(){
- 		var result = told.tell({myKey: "This is a test message", foo: "bar"}, "TestType", "Try,Tag");
+// 		var result = told.tell({myKey: "This is a test message", foo: "bar"}, "TestType", "Try,Tag");
+ 		var result = told.tell({message: {myKey: "This is a test message", foo: "bar"}}, "TestType", "Try,Tag");
     	chai.expect(_.isEqual(result, expected_E)).to.be.true;
  	});
 });
@@ -239,6 +239,7 @@ describe('Tell with user defined message and full defaults', function(){
 	
  	it('should return expected result E .', function(){
  		var result = told.tell({myKey: "This is a test message", foo: "bar"}, "TestType", "Try,Tag");
+ 		var result = told.tell({message: {myKey: "This is a test message", foo: "bar"}}, "TestType", "Try,Tag");
  		expected_ADD = {
 			type: "TestType"
 			,tags: [
